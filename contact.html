@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       
+        <title>Contact</title>
+        <style>
+            h1{
+                text-align: center;
+                background-color: lawngreen;
+            }
+            h3{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+            * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+ 
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  color: #ddd;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+ 
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+   
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  
+}
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  color:brown;
+}
+
+            
+</style>
+
+    </head>
+    <body>
+        <h1>Javinuh.com</h1><br>
+        <h3>Contact</h3><br>
+        <p style="background-color: lightblue;">MOHAMED JAVITH<br>Founder and CEO of javinuh.com<br>javinuh@gmail.com<br>+91 7094783968<br>+91 6380259378</p>
+        <p style="background-color: lightpink;">MOHAMED NUHMAN B.E<br>co-founder of javinuh.com<br>nuhmanmd1998@gmail.com</p><br><br>
+        <div class="slideshow-container">
+<h3>covid-19 Awareness </h3>
+<div class="slideshow-container">
+
+  <div class="mySlides">
+    
+    <h3>STAY HOME<br>STAY SAFE</h3>
+  </div>
+  
+  <div class="mySlides">
+  <h3>WASH HAND FREQUENTLY WITH SOAP<br><br>Put on the mask when going out</h3>
+  </div>
+  
+  <div class="mySlides">
+  <h3>WE NEED TO PRACTICE SOCIAL DISTANCE<br><br>Avoid touching eyes, noise, mouth</h3>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)"></a>
+  <a class="next" onclick="plusSlides(1)"></a>
+
+  </div>
+
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+<p style="text-align: center;"><a href="index.html">Back</a></p>
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+    </script>
+
+    </body>
+</html>

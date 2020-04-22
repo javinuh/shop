@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>smart shop</title>
+    
+
+<style>
+  h1{
+    text-align: center;
+    background-color: maroon;
+    color: mediumspringgreen;
+  }
+  h3{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {
+
+
+  width: 350px;
+  height: 250px;
+  
+}
+center{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+
+.active {
+  
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 6.5s;
+  animation-name: fade;
+  animation-duration: 6.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.column {
+  float: left;
+  width: 18.33%;
+  padding: 1px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+</style>
+</head>
+    
+    <body>
+      
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">JAVINUH-SHOP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <!--home-->
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!---->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+              </li>
+            </ul>
+              
+              
+              
+              <div class="nav-right" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                <a class="nav-link" href="signup.html">signup</a>
+                  </li>
+                  <li class="nav-item">
+                <a class="nav-link" href="#">cart</a>
+                </li>
+               </ul>
+              </div>
+            </div>
+          </nav>
+          <h1>JAVINUH SHOP</h1><br>
+          <h3>Find your local shops and purcuse in online </h3><br>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="img1.jpeg"class="center" >
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="img3.jpeg" class="center">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="img6.jpg" class="center">
+              <div class="text"></div>
+            </div>
+            
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+      
+
+      <h4 style="text-indent: 3em">Product catageries</h4>
+      <div class="row" style="text-indent: 2em;">
+       <a href="rice.html">
+          <img src="rice.jpg" alt="rice" style="width: 250px;height: 250px;"><br>
+          <h3>rice (arisi)</h3></a>
+       
+        <a href="#"> 
+          <img src="daal.jpg" alt="daal" style="width: 250px;height: 250px;"><br>
+          <h3>daal (parupu)</h3></a>
+        
+        <
+        <a href="#">
+          <img src="oil.jpg" alt="oil" style="width: 250px;height: 250px;"><br>
+          <h3>oil (ennai)</h3></a>
+      
+        <a href="#">
+          <img src="Britannia-biscult.jpg"
+          alt="biscults" style="width: 250px;height: 250px;"><br>
+          <h3>biscults</h3></a>
+          
+          <a href="#">
+          <img src="chips.jpg" alt="chips" style="width: 250px;height: 250px;"><br>
+          <h3>chips</h3></a>
+          
+      
+      
+        <a href="#">
+          <img src="paste.jpg" alt="tooth paste" style="width: 250px;height: 250px;"><br>
+          <h3>tooth paste</h3></a>
+         
+          
+          <a href="#">
+            <img src="tooth-brush.jpg" alt="tooth brush" style="width: 250px;height: 250px;"><br>
+            <h3>tooth brush</h3></a>
+            
+            <a href="#">
+              <img src="masala.jpg" alt="masala" style="width: 250px;height: 250px;"><br>
+              <h3>spices (masala)</h3></a>
+              
+              <a href="#">
+                <img src="washing-soap.jpg" alt="washing soap" style="width: 250px;height: 250px;"><br>
+                <h3>washing soaps</h3></a>
+               
+                
+                <a href="#">
+                  <img src="bath-soap.jpg" alt="bath soaps" style="width: 250px;height: 250px;"><br>
+                  <h3>bath soaps</h3></a>
+                  
+      <br>
+
+      <footer class="page-footer" style="background-color:darkblue;text-align: center;color: burlywood; width: 100%;">
+        <div class="container">
+         
+
+              <h5 class="white-text">Contact</h5><br>
+              <p class="grey-text text-lighten-4">MOHAMED JAVITH</p>
+              <p class="grey-text text-lighten-4">javinuh@gmail.com</p>
+            
+         
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2020 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">javinuh</a>
+          </div>
+        </div>
+      </footer>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 6000); // Change image every 6 seconds
+        }
+        </script>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </body>
+</html>
